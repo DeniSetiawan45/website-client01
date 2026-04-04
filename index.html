@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Auto Rescue - Service Mobil Panggilan 24 Jam</title>
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <!-- ========== NAVBAR ========== -->
+  <!-- Bagian navbar kosongkan, ubah jadi text aja bernama : "nama kamu" -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#">Auto<span>Rescue</span></a>
+    </div>
+    <!-- Navbar teks biasa, tanpa link -->
+    <ul class="nav-links">
+      <li>BERANDA</li>
+      <li>LAYANAN</li>
+      <li>JADWAL</li>
+      <li>TENTANG</li>
+      <li>KONTAK</li>
+    </ul>
+    <!-- NAMA KAMU di sini (GANTI DENGAN NAMA ANDA) -->
+    <div class="profile-name">
+      <i class="fas fa-user-circle"></i> <span id="namaKamu">Budi Santoso</span>
+      <!-- GANTI "Budi Santoso" dengan NAMA KAMU -->
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <div class="hero">
+    <div class="hero-content">
+      <div class="badge">⚡ SIAP 24 JAM</div>
+      <h1>SERVICE MOBIL <br> PANGGILAN</h1>
+      <p>Layanan service mobil darurat 24 jam. Kami datang ke lokasi Anda. Cepat, Profesional, dan Terpercaya.</p>
+      <button class="btn-primary" id="callBtn">PANGGIL SEKARANG →</button>
+    </div>
+    <div class="hero-image">
+      <!-- gambar profileuser.jpg (gambar yang di atas) -->
+      <img src="https://placehold.co/600x400/2c3e4e/ffffff?text=profileuser.jpg" alt="profileuser.jpg" id="profileUserImg">
+    </div>
+  </div>
+
+  <!-- ========== OUR SERVICES (LAYANAN SERVICE MOBIL PANGGILAN) ========== -->
+  <div class="services-intro">
+    <h2>LAYANAN KAMI</h2>
+    <p>Layanan service mobil panggilan profesional dengan teknisi berpengalaman. Siap melayani darurat 24 jam.</p>
+  </div>
+  <div class="service-grid">
+    <div class="service-card">
+      <i class="fas fa-oil-can"></i>
+      <h3>Ganti Oli</h3>
+      <p>Ganti oli mesin dan oli transmisi di tempat, cepat & bersih.</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-car-battery"></i>
+      <h3>Jump Start Aki</h3>
+      <p>Aki soak? Kami datang untuk jump start darurat 24 jam.</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-tachometer-alt"></i>
+      <h3>Diagnosa Mesin</h3>
+      <p>Pemeriksaan mesin dengan alat diagnosa modern.</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-tire-flat"></i>
+      <h3>Ban Bocor</h3>
+      <p>Tambal ban atau ganti ban serep di lokasi.</p>
+    </div>
+  </div>
+  <div class="view-all-wrapper">
+    <button class="btn-outline" id="viewAllBtn">LIHAT SEMUA LAYANAN</button>
+  </div>
+
+  <!-- ========== IMAGE SLIDER DUA BAGIAN ========== -->
+  <!-- Slider 1: dari Atas ke Bawah -->
+  <!-- Slider 2: dari Bawah ke Atas -->
+  <div class="slider-section">
+    <div class="slider-title">
+      <h2>GALERI LAYANAN</h2>
+      <p>Tim kami selalu siap melayani darurat mobil Anda</p>
+    </div>
+    <div class="double-slider">
+      <!-- SLIDER 1 : Atas ke Bawah (vertical down) -->
+      <div class="slider-card">
+        <h3>Teknisi Profesional</h3>
+        <p>Slider dari ATAS ke BAWAH</p>
+        <div class="slider-image-container slider-vertical-down" id="sliderDown">
+          <div class="slider-track">
+            <img class="slide-img" src="https://placehold.co/600x400/1a5f7a/ffffff?text=Slider+Atas+1" alt="slide1">
+            <img class="slide-img" src="https://placehold.co/600x400/e05a2a/ffffff?text=gambar2.jpg" alt="gambar2.jpg">
+            <img class="slide-img" src="https://placehold.co/600x400/2c8e6a/ffffff?text=Slider+Atas+3" alt="slide3">
+          </div>
+        </div>
+        <p class="slider-caption">✨ Gambar bergerak turun setiap 3 detik</p>
+      </div>
+
+      <!-- SLIDER 2 : Bawah ke Atas (vertical up) -->
+      <div class="slider-card">
+        <h3>Darurat 24 Jam</h3>
+        <p>Slider dari BAWAH ke ATAS</p>
+        <div class="slider-image-container slider-vertical-up" id="sliderUp">
+          <div class="slider-track">
+            <img class="slide-img" src="https://placehold.co/600x400/2c3e4e/ffffff?text=Slider+Bawah+1" alt="up1">
+            <img class="slide-img" src="https://placehold.co/600x400/d45a2a/ffffff?text=Slider+Bawah+2" alt="up2">
+            <img class="slide-img" src="https://placehold.co/600x400/267c5e/ffffff?text=Slider+Bawah+3" alt="up3">
+          </div>
+        </div>
+        <p class="slider-caption">✨ Gambar bergerak naik setiap 3 detik</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== ABOUT US ========== -->
+  <div class="about-us">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>TENTANG KAMI</h2>
+        <div class="sub">SIAPA KAMI?</div>
+        <p>Auto Rescue adalah layanan service mobil panggilan terdepan di Indonesia. Berdiri sejak 2015, kami telah melayani ribuan pelanggan dengan teknisi tersertifikasi dan peralatan modern.</p>
+        <ul class="check-list">
+          <li><i class="fas fa-check-circle"></i> Teknisi Profesional</li>
+          <li><i class="fas fa-check-circle"></i> Respon Cepat 24 Jam</li>
+        </ul>
+      </div>
+      <div class="stats">
+        <div class="stat-item"><div class="stat-number">500+</div><div class="stat-label">PROJECT</div></div>
+        <div class="stat-item"><div class="stat-number">9,5</div><div class="stat-label">PLEASURE</div></div>
+        <div class="stat-item"><div class="stat-number">3000+</div><div class="stat-label">CUSTOMER</div></div>
+        <div class="stat-item"><div class="stat-number">23</div><div class="stat-label">TEAM MEMBERS</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== MAPS - TIDAK DITAMPILKAN (KOSONG) ========== -->
+  <!-- Sesuai perintah: "buatkan maps nya tapi jangan buat tampilan maps nya" -->
+  <!-- Jadi area maps tidak ada sama sekali, saya hanya kasih komentar -->
+  
+</div>
+
+<footer>
+  © 2025 Auto Rescue — Layanan Service Mobil Panggilan 24 Jam
+</footer>
+
+<!-- ========== WHATSAPP FLOATING BUTTON ========== -->
+<!-- 
+  =======================================================
+  📍 LETAK LINK WA DI SINI (GANTI NOMOR DENGAN NOMOR ANDA)
+  =======================================================
+  Ganti angka 6281234567890 dengan nomor WhatsApp Anda.
+  Contoh: https://wa.me/6282112345678?text=Halo%20saya%20butuh%20service%20mobil
+-->
+<a href="https://wa.me/6281234567890?text=Halo%20Auto%20Rescue%2C%20saya%20butuh%20service%20mobil%20panggilan" class="wa-float" target="_blank" id="whatsappLink">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
